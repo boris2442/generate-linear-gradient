@@ -11,7 +11,7 @@
 // btn.addEventListener("click", generate)
 
 const btn=document.querySelector(".btn")
-const code=document.querySelector(".code");
+const code=document.querySelector("#code");
 
 
 function linearGradient(){
@@ -34,6 +34,13 @@ let angle=Math.floor(Math.random()*360);
 document.body.style.background=`linear-gradient( ${angle}deg, rgb(${col1}, ${col2}, ${col3}), rgb(${col4}, ${col5}, ${col6}))`
 
 code.textContent=`linear-gradient( ${angle}deg, rgb(${col1}, ${col2}, ${col3}), rgb(${col4}, ${col5}, ${col6}),  rgb(${col7}, ${col8}, ${col8}),  rgb(${col10}, ${col11}, ${col12}))`;
+
+navigator.clipboard.writeText(code.textContent);
+btn.textContent="code copier";
+
+setTimeout(()=>{
+btn.textContent="generer"
+}, 1000)
 
 }
 btn.addEventListener("click", linearGradient )
