@@ -1,0 +1,40 @@
+*, ::after, ::before{
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #333 ;
+    /* background: linear-gradient(200deg, rgb(20, 50, 129), rgb(230, 100, 0)); */
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+width: 350px;
+height: 250px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 30px;
+    background-color:#fff ;
+}
+.code{
+    font-size: 1rem;
+    text-align: center;
+ 
+}
+button{
+    background-color: #1687a7;
+    border: none;
+    color:#fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0d5773;
+}
