@@ -31,7 +31,7 @@ let col12= Math.floor( Math.random()*255);
 let angle=Math.floor(Math.random()*360);
 
 
-document.body.style.background=`linear-gradient( ${angle}deg, rgb(${col1}, ${col2}, ${col3}), rgb(${col4}, ${col5}, ${col6}))`
+document.body.style.background=`linear-gradient( ${angle}deg, rgb(${col1}, ${col2}, ${col3}), rgb(${col4}, ${col5}, ${col6}), rgb(${col7}, ${col8}, ${col8}),  rgb(${col10}, ${col11}, ${col12}) )`
 
 code.textContent=`linear-gradient( ${angle}deg, rgb(${col1}, ${col2}, ${col3}), rgb(${col4}, ${col5}, ${col6}),  rgb(${col7}, ${col8}, ${col8}),  rgb(${col10}, ${col11}, ${col12}))`;
 
