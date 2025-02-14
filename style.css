@@ -9,11 +9,17 @@ body{
   
     display: flex;
     height: 100vh;
+    gap:10px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+h1{
+    color:#fff;
+}
 .main{
-width: 370px;
+    width: 90%;
+max-width: 370px;
 height: 250px;
 display: flex;
 padding: 10px;
